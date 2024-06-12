@@ -83,7 +83,7 @@ La lista es una coleccion ordenada y modificable. Permite miembros duplicados.
 #1.- Utilizar funciones y mandar llamar desde otro archivo
 #2.- Utilizar las listas para almacenar los nombres de las peliculas
 
-import Archivo_ejemplo_5
+import Archivo_funciones_peliculas
 
 print("\t...::BIENVENIDO!::...\nA continuación se muestran las películas disponibles.\n")
 peliculas = [
@@ -97,17 +97,17 @@ peliculas = [
 opciones = 4  # Número de iteraciones del menú
 
 for i in range(opciones):
-    Archivo_ejemplo_5.consultar_pelicula(peliculas)
+    Archivo_funciones_peliculas.consultar_pelicula(peliculas)
     print("\nMenu de Opciones: ")
     print("1.-Agregar peliculas\n2.-Remover peliculas\n3.-Consultar peliculas\n4.-Salir")
     opcion = input("¿Qué deseas hacer? \n")
 
     if opcion == "1":
-        Archivo_ejemplo_5.agregar_pelicula(peliculas)
+        Archivo_funciones_peliculas.agregar_pelicula(peliculas)
     elif opcion == "2":
-        Archivo_ejemplo_5.remover_pelicula(peliculas)
+        Archivo_funciones_peliculas.remover_pelicula(peliculas)
     elif opcion == "3":
-        Archivo_ejemplo_5.consultar_pelicula(peliculas)
+        Archivo_funciones_peliculas.consultar_pelicula(peliculas)
     elif opcion == "4":
         print("Gracias por usar el gestor de películas. ¡Hasta luego!")
     else:
