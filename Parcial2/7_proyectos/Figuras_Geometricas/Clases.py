@@ -1,5 +1,5 @@
 class Figuras:
-    def __init__(self, x, y):
+    # def __init__(self, x, y):
         self.x = x
         self.y = y
         self.visible = True
@@ -42,7 +42,7 @@ class Figuras:
 
 class Rectangulos(Figuras):
     def __init__(self, alto, ancho):
-        super().__init__()
+        # super().__init__()
         self._alto = alto
         self._ancho = ancho
 
