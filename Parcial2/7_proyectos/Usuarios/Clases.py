@@ -22,7 +22,7 @@ class Usuarios:
     def getTel(self):
         return self.tel
     
-    def info_usuario(self):
+    def getinfo_usuario(self):
         print(f"Nombre {self.getNombre()}  con la direccion {self.getDireccion()} y el telefono {self.getTel()}")
 
 class Clientes(Usuarios):
@@ -36,8 +36,8 @@ class Clientes(Usuarios):
     def getNum_cliente(self):
         return self.__num_cliente
     
-    def info_usuario(self):
-        return super().info_usuario(f"Nombre {self.getNombre()}  con la direccion {self.getDireccion()} y el telefono {self.getTel()} con el numero de cliente {self.getNum_cliente()}")
+    def getinfo_usuario(self):
+        return super().getinfo_usuario(f"Nombre {self.getNombre()}  con la direccion {self.getDireccion()} y el telefono {self.getTel()} con el numero de cliente {self.getNum_cliente()}")
     
 class Empleados(Usuarios):
     def __init__(self,nombre,direccion,tel,salario,num_empleado,tipo):
@@ -64,8 +64,8 @@ class Empleados(Usuarios):
     def getTipo(self):
         return self._tipo
     
-    def info_usuario(self):
-        return super().info_usuario(f"Nombre {self.getNombre()}  con la direccion {self.getDireccion()} y el telefono {self.getTel()} con el salario de {self.getSalario()} y su numero de empleado es {self.getNum_empleado()} y con un tipo {self.getTipo()}")
+    def getinfo_usuario(self):
+        return super().getinfo_usuario(f"Nombre {self.getNombre()}  con la direccion {self.getDireccion()} y el telefono {self.getTel()} con el salario de {self.getSalario()} y su numero de empleado es {self.getNum_empleado()} y con un tipo {self.getTipo()}")
     
 
     
